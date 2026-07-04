@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rimberio Invoice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Courier New',Courier,monospace;}
+  body{background:#111114;padding:40px 0;}
+  .page{width:544px;margin:0 auto;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5);}
+  .content{padding:40px 48px;}
+
+  .header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:34px;}
+  .header h1{font-size:22px;letter-spacing:3px;font-weight:700;color:#1a1a1a;margin-bottom:10px;}
+  .header p{font-size:12px;color:#333;line-height:1.7;}
+
+  .logo-wrap{text-align:center;}
+  .hexagon{
+    width:56px;height:56px;margin:0 auto 8px;
+    background:conic-gradient(from 0deg,#8a8a8a,#c9c9c9,#8a8a8a,#5c5c5c,#8a8a8a);
+    clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0% 50%);
+  }
+  .logo-wrap .hexagon::after{content:"";}
+  .logo-wrap .brand{font-size:12px;font-weight:700;letter-spacing:2px;}
+
+  table{width:100%;border-collapse:collapse;border:1.5px solid #1a1a1a;margin-bottom:30px;}
+  thead td{
+    font-size:10.5px;font-weight:700;letter-spacing:.5px;padding:8px 10px;border:1px solid #1a1a1a;
+  }
+  thead td:not(:first-child){text-align:right;}
+  tbody td{font-size:10.5px;padding:8px 10px;border:1px solid #1a1a1a;color:#222;}
+  tbody td:not(:first-child){text-align:right;}
+  tbody tr.blank td{height:22px;}
+  tfoot td{font-size:10.5px;font-weight:700;padding:8px 10px;border:1px solid #1a1a1a;}
+  tfoot td:first-child{text-align:right;}
+
+  .bottom-row{display:flex;justify-content:space-between;align-items:flex-end;}
+  .payment h5{font-size:12px;font-weight:700;margin-bottom:8px;}
+  .payment p{font-size:11px;color:#333;line-height:1.6;}
+  .signature{text-align:right;}
+  .sig{font-family:'Brush Script MT',cursive;font-size:26px;color:#1a1a1a;}
+  .sig-title{font-size:10.5px;color:#333;margin-top:4px;}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="content">
+      <div class="header">
+        <div>
+          <h1>INVOICE</h1>
+          <p>Invoice no: 01234<br>Issued to: Olivia Wilson<br>Due date: 30/11/2030</p>
+        </div>
+        <div class="logo-wrap">
+          <div class="hexagon"></div>
+          <div class="brand">RIMBERIO</div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr><td>Description</td><td>Qty</td><td>Price</td><td>Subtotal</td></tr>
+        </thead>
+        <tbody>
+          <tr><td>Business card</td><td>100</td><td>$1</td><td>$100</td></tr>
+          <tr><td>Letterhead</td><td>100</td><td>$1</td><td>$100</td></tr>
+          <tr><td>Poster</td><td>100</td><td>$5</td><td>$500</td></tr>
+          <tr><td>Flyer</td><td>100</td><td>$5</td><td>$500</td></tr>
+          <tr><td>Outdoor banner</td><td>100</td><td>$10</td><td>$1000</td></tr>
+          <tr class="blank"><td></td><td></td><td></td><td></td></tr>
+          <tr class="blank"><td></td><td></td><td></td><td></td></tr>
+          <tr class="blank"><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Tax</td><td style="text-align:right;">$220</td></tr>
+          <tr><td colspan="3">Grand total</td><td style="text-align:right;">$2420</td></tr>
+        </tfoot>
+      </table>
+
+      <div class="bottom-row">
+        <div class="payment">
+          <h5>Payment info:</h5>
+          <p>Bank Name: Wardiere<br>Account No: 0123 4567 8901<br>Account Name: Claudia Alves</p>
+        </div>
+        <div class="signature">
+          <div class="sig">Sacha D.</div>
+          <div class="sig-title">Finance Manager</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

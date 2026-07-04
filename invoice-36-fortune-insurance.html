@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fortune Insurance Invoice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+  body{background:linear-gradient(160deg,#c9c3e8,#e4d9f2);padding:40px 0;min-height:100vh;}
+  .page{
+    width:436px;margin:0 auto;background:#f4f2f7;border-radius:16px;position:relative;overflow:hidden;
+    box-shadow:0 20px 50px rgba(60,40,100,.25);
+  }
+  .header{
+    position:relative;height:150px;
+    background:linear-gradient(120deg,#123a52 0%,#1b6b6b 55%,#3fb8b8 100%);
+    padding:20px 26px;color:#fff;
+  }
+  .header::after{
+    content:"";position:absolute;left:-10%;right:-10%;bottom:-40px;height:80px;background:#f4f2f7;
+    border-radius:50%;
+  }
+  .mandala{
+    position:absolute;top:16px;right:22px;width:34px;height:34px;
+    border:2px solid rgba(255,255,255,.8);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .mandala::before{content:"✦";color:#fff;font-size:16px;}
+  .header .title{font-size:30px;font-weight:800;position:relative;z-index:2;margin-top:20px;}
+
+  .content{padding:8px 26px 22px;position:relative;z-index:2;}
+
+  .info-row{display:flex;justify-content:space-between;gap:10px;margin-bottom:16px;}
+  .info p{font-size:9.5px;color:#333;line-height:1.8;}
+  .info p b{font-weight:700;}
+  .client h5{font-size:10.5px;font-weight:800;color:#123a52;margin-bottom:4px;}
+  .client p{font-size:9.5px;color:#333;line-height:1.6;text-align:left;}
+
+  table{width:100%;border-collapse:collapse;margin-bottom:14px;}
+  thead td{font-size:9px;font-weight:700;color:#123a52;padding:6px 4px;border-bottom:2px solid #123a52;}
+  thead td:not(:first-child){text-align:right;}
+  tbody td{font-size:9.5px;padding:7px 4px;color:#333;border-bottom:1px solid #ddd;}
+  tbody td:not(:first-child){text-align:right;}
+
+  .totals-pay{display:flex;justify-content:space-between;gap:10px;margin-bottom:16px;}
+  .totals p{font-size:10px;color:#222;line-height:1.9;}
+  .totals b{font-weight:800;}
+  .pay p{font-size:9.5px;color:#333;line-height:1.7;text-align:right;}
+  .pay b{font-weight:700;}
+
+  .terms h5{font-size:10px;font-weight:800;color:#123a52;margin-bottom:6px;}
+  .terms ul{padding-left:16px;}
+  .terms li{font-size:9px;color:#444;margin-bottom:3px;}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="mandala"></div>
+      <div class="title">INVOICE</div>
+    </div>
+    <div class="content">
+      <div class="info-row">
+        <div class="info">
+          <p><b>Invoice No:</b> INV-2026-1148<br><b>Issue Date:</b> April 04, 2026<br><b>Due Date:</b> April 18, 2026<br><b>Currency:</b> USD</p>
+        </div>
+        <div class="client">
+          <h5>CLIENT DETAIL</h5>
+          <p><b>Fortune Insurance</b><br>123 Anywhere St, Any City<br>E: hello@reallygreatsite.com<br>P: +123-456-7890<br>W: www.reallygreatsite.com</p>
+        </div>
+      </div>
+
+      <table>
+        <thead><tr><td>SERVICE</td><td>QTY</td><td>UNIT</td><td>UNIT PRICE</td><td>TOTAL</td></tr></thead>
+        <tbody>
+          <tr><td>Business Strategy Consulting</td><td>25</td><td>hrs</td><td>$60</td><td>$1,500</td></tr>
+          <tr><td>Market Research Analysis</td><td>1</td><td>project</td><td>$500</td><td>$500</td></tr>
+          <tr><td>Financial Performance Review</td><td>1</td><td>report</td><td>$400</td><td>$400</td></tr>
+          <tr><td>Operational Audit</td><td>1</td><td>project</td><td>$350</td><td>$350</td></tr>
+          <tr><td>Process Optimization Advisory</td><td>12</td><td>hrs</td><td>$80</td><td>$960</td></tr>
+        </tbody>
+      </table>
+
+      <div class="totals-pay">
+        <div class="totals">
+          <p>Subtotal: <b>$3,710</b><br>Tax (10%): <b>$371</b><br>Grand Total: <b>$4,081</b></p>
+        </div>
+        <div class="pay">
+          <p><b>Bank:</b> 0123 4567 8901 2345<br><b>Account Name:</b> Worth Bank<br><b>Payment Method:</b> April 18, 2026<br>Bank Transfer</p>
+        </div>
+      </div>
+
+      <div class="terms">
+        <h5>Terms &amp; Conditions</h5>
+        <ul>
+          <li>Payment due within 14 days</li>
+          <li>Late payment fee: 2% per week</li>
+          <li>All services are non-refundable after completion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

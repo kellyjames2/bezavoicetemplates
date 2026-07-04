@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hanover and Tyke Invoice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+  body{background:#111114;padding:40px 0;}
+  .page{width:400px;margin:0 auto;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5);}
+  .top-line{height:5px;background:linear-gradient(90deg,#8fd3c9,#6b8fd6,#7b6fd0);}
+
+  .content{padding:26px 30px 0;}
+
+  .header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;}
+  .inv-title{font-family:Georgia,serif;font-size:30px;color:#4a3f8f;font-weight:400;}
+  .inv-date{font-size:10px;color:#333;margin-top:4px;}
+  .brand{display:flex;align-items:center;gap:8px;text-align:right;}
+  .circle-logo{width:26px;height:26px;border-radius:50%;border:2px solid #4a3f8f;flex-shrink:0;}
+  .brand-name{font-size:10px;font-weight:800;color:#4a3f8f;letter-spacing:.5px;}
+
+  .parties{display:flex;justify-content:space-between;margin-bottom:16px;}
+  .party h5{font-size:10px;font-weight:700;color:#4a3f8f;margin-bottom:5px;}
+  .party p{font-size:9.5px;color:#333;line-height:1.6;}
+
+  table{width:100%;border-collapse:collapse;margin-bottom:14px;}
+  thead td{background:#4a3f8f;color:#fff;font-size:9px;font-weight:700;padding:7px 8px;}
+  thead td:not(:first-child){text-align:center;}
+  tbody td{font-size:9px;padding:8px;border:1px solid #ddd;height:18px;}
+
+  .bottom-row{display:flex;justify-content:space-between;gap:10px;margin-bottom:14px;}
+  .terms h5{font-size:9.5px;font-weight:700;color:#4a3f8f;margin-bottom:4px;}
+  .terms p{font-size:8.5px;color:#555;line-height:1.5;}
+  .sub-table{border:1px solid #ccc;font-size:9px;}
+  .sub-table div{display:flex;justify-content:space-between;gap:24px;padding:5px 8px;border-bottom:1px solid #ccc;}
+  .sub-table div:last-child{border-bottom:none;font-weight:700;}
+
+  .contact-row{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:12px;}
+  .contact h5{font-size:9.5px;font-weight:700;color:#4a3f8f;margin-bottom:4px;}
+  .contact p{font-size:8.5px;color:#333;line-height:1.6;}
+  .sig{text-align:right;}
+  .sig-name{font-family:'Brush Script MT',cursive;font-size:16px;color:#333;}
+  .sig-role{font-size:8px;color:#555;letter-spacing:.5px;}
+
+  .footer{background:#1a1035;color:#fff;text-align:center;padding:10px;font-size:10px;font-weight:700;letter-spacing:.5px;}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-line"></div>
+    <div class="content">
+      <div class="header">
+        <div>
+          <div class="inv-title">Invoice</div>
+          <div class="inv-date">Date: 20 August 2026</div>
+        </div>
+        <div class="brand">
+          <div class="circle-logo"></div>
+          <div class="brand-name">HANOVER<br>AND TYKE</div>
+        </div>
+      </div>
+
+      <div class="parties">
+        <div class="party">
+          <h5>Invoice To:</h5>
+          <p><b>Adeline Palmerston</b><br>(+123-456-7890)<br>www.reallygreatsite.com</p>
+        </div>
+        <div class="party" style="text-align:right;">
+          <h5>Payment Method:</h5>
+          <p>Account Number: 123-456-7890<br>Bank Name: Fradel and Spies</p>
+        </div>
+      </div>
+
+      <table>
+        <thead><tr><td>DESCRIPTION</td><td>QUANTITY</td><td>UNIT PRICE</td><td>TOTAL</td></tr></thead>
+        <tbody>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+
+      <div class="bottom-row">
+        <div class="terms">
+          <h5>Terms and Conditions</h5>
+          <p>Please ensure payment is made within 30 days of receiving this invoice. A late fee of 10% interest will be applied monthly to any overdue invoices.</p>
+        </div>
+        <div class="sub-table">
+          <div><span>Sub-total:</span><span></span></div>
+          <div><span>Tax:</span><span></span></div>
+          <div><span>TOTAL:</span><span></span></div>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact">
+          <h5>Contact Us!</h5>
+          <p>📞 +123-456-7890<br>🌐 www.reallygreatsite.com<br>📍 123 Anywhere St., Any City</p>
+        </div>
+        <div class="sig">
+          <div class="sig-name">Brigitte Schwartz</div>
+          <div class="sig-role">ADMINISTRATOR</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">THANK YOU FOR YOUR PURCHASE!</div>
+  </div>
+</body>
+</html>

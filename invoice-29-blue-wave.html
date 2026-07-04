@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invoice INV-12345-1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;}
+  body{background:#1c1c1c;padding:40px 0;}
+  .page{
+    width:554px;margin:0 auto;background:#fff;position:relative;overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+  }
+  .header{
+    position:relative;height:140px;
+    background:linear-gradient(120deg,#0a1f5c 0%,#123a8f 45%,#1e56b8 100%);
+    padding:34px 34px 0;
+    color:#fff;
+  }
+  .header::after{
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:#fff;
+    border-radius:50% 50% 0 0 / 100% 100% 0 0;
+    transform:scaleX(1.5) translateY(30px);
+  }
+  .header-row{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:2;}
+  .header .title{font-size:34px;font-weight:800;letter-spacing:1px;}
+  .header .inv-no{font-size:13px;font-weight:700;letter-spacing:.5px;margin-top:14px;}
+
+  .body{padding:26px 40px 34px;}
+
+  .parties{display:flex;justify-content:space-between;margin-bottom:18px;}
+  .party h4{font-size:14px;color:#333;margin-bottom:8px;}
+  .party.to h4, .party.from h4{text-align:left;}
+  .party.from{text-align:right;}
+  .party p{font-size:12.5px;color:#555;line-height:1.55;}
+
+  .date-line{font-size:13px;color:#333;margin:16px 0 14px;}
+
+  table{width:100%;border-collapse:collapse;margin-top:6px;}
+  thead td{
+    background:#123a8f;color:#fff;font-size:12.5px;font-weight:600;padding:9px 10px;
+  }
+  thead td:nth-child(1){text-align:left;}
+  thead td:nth-child(2),thead td:nth-child(3),thead td:nth-child(4){text-align:center;}
+  tbody td{
+    font-size:12px;color:#444;padding:9px 10px;border:1px solid #dfe3ea;
+  }
+  tbody td:nth-child(1){text-align:left;}
+  tbody td:nth-child(2),tbody td:nth-child(3),tbody td:nth-child(4){text-align:center;}
+
+  .subtotal-row{display:flex;justify-content:flex-end;margin-top:14px;}
+  .subtotal-row .box{
+    display:flex;width:280px;
+  }
+  .subtotal-row .label{
+    background:#123a8f;color:#fff;flex:1;padding:9px 14px;font-size:12.5px;font-weight:600;
+  }
+  .subtotal-row .value{
+    background:#123a8f;color:#fff;padding:9px 14px;font-size:12.5px;font-weight:600;border-left:1px solid rgba(255,255,255,.3);
+  }
+
+  .note{margin-top:26px;font-size:13px;color:#333;}
+  .note .line{display:inline-block;border-bottom:1px solid #999;width:340px;height:16px;margin-left:6px;}
+  .note-line2{border-bottom:1px solid #999;width:400px;height:20px;margin-top:6px;}
+
+  .bottom-row{display:flex;justify-content:space-between;align-items:flex-end;margin-top:30px;}
+  .payment h4{font-size:13px;color:#222;margin-bottom:8px;}
+  .payment p{font-size:12px;color:#444;margin-bottom:2px;}
+  .payment b{font-weight:700;}
+  .thankyou{font-family:'Brush Script MT',cursive;font-size:30px;color:#123a8f;}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header-row">
+        <div class="title">INVOICE</div>
+        <div class="inv-no">NO: INV-12345-1</div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="parties">
+        <div class="party to">
+          <h4>Bill To:</h4>
+          <p>Estelle Darcy<br>+123-456-7890<br>123 Anywhere St., Any City</p>
+        </div>
+        <div class="party from">
+          <h4>From:</h4>
+          <p>Samira Hadid<br>+123-456-7890<br>123 Anywhere St., Any City</p>
+        </div>
+      </div>
+      <div class="date-line">Date: 26 June 2022</div>
+      <table>
+        <thead>
+          <tr><td>Description</td><td>Qty</td><td>Price</td><td>Total</td></tr>
+        </thead>
+        <tbody>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+          <tr><td>Your Description</td><td>1</td><td>$ 0.00</td><td>$ 0.00</td></tr>
+        </tbody>
+      </table>
+      <div class="subtotal-row">
+        <div class="box">
+          <div class="label">Sub Total</div>
+          <div class="value">$ 0.00</div>
+        </div>
+      </div>
+      <div class="note">
+        Note:<span class="line"></span>
+        <div class="note-line2"></div>
+      </div>
+      <div class="bottom-row">
+        <div class="payment">
+          <h4>Payment Information:</h4>
+          <p><b>Bank:</b> &nbsp;Name Bank</p>
+          <p><b>No Bank:</b> &nbsp;123-456-7890</p>
+          <p><b>Email:</b> &nbsp;reallygreatsite.com</p>
+        </div>
+        <div class="thankyou">Thank You!</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
